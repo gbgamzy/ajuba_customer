@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "578817083399",
+    "project_id": "ajuba-flutter",
+    "storage_bucket": "ajuba-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578817083399:android:630420d4eb247e7dae02a2",
+        "android_client_info": {
+          "package_name": "com.example.ajuba_merchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578817083399-j46t99cpmag6rdnugrr3t5bakr2k78ql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ajuba_merchant",
+            "certificate_hash": "8e78f86cf56a29e214087eb3a72fd13ac0a34cf8"
+          }
+        },
+        {
+          "client_id": "578817083399-6pgvm618mmv5q6fcinn6ppv6s9k9n6vq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjfkrsWSnPbEBupna1ZfrV6jUimr_J_H0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578817083399-6pgvm618mmv5q6fcinn6ppv6s9k9n6vq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "578817083399-bm1tjuog0fgj2vr8oggsjhcmcuspmk1b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.demoUbun"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
