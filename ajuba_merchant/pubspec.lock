@@ -135,6 +135,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.3"
+  loop_page_view:
+    dependency: "direct main"
+    description:
+      name: loop_page_view
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.11"
   matcher:
     dependency: transitive
     description:
