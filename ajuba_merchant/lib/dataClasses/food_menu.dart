@@ -5,8 +5,9 @@ class FoodMenu {
   int? FMID;
   String? category;
 
+
   static FoodMenu? fromMap(Map<String, dynamic> map) {
-    if (map == null) return null;
+
     FoodMenu foodMenuBean = FoodMenu();
     foodMenuBean.FMID = map['FMID'];
     foodMenuBean.category = map['category'];

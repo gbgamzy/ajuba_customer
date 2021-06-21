@@ -42,7 +42,8 @@ class _LoginPageState extends State<LoginPage> {
       await Future.delayed(
         Duration(milliseconds: 1000),
       );
-      Navigator.pushNamed(context, Routes.home);
+
+      Navigator.popAndPushNamed(context, Routes.home);
 
       setState(() {
         changeButton = false;

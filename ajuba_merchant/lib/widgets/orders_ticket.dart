@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 
 
 class TicketOrders extends StatelessWidget {
-  late Order order;
+  late Order? order;
 
 
-  TicketOrders(Order ord){
+  TicketOrders(Order? ord){
     order=ord;
   }
 
@@ -45,7 +45,7 @@ class TicketOrders extends StatelessWidget {
                         child: Column(
 
                           children: [
-                            Text(order.contents!,
+                            Text("${order?.contents}",
                               textScaleFactor: 1.2,
                               textAlign: TextAlign.left,
                             ),
@@ -53,7 +53,7 @@ class TicketOrders extends StatelessWidget {
                             Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                Text("Rs. ${order.price}",
+                                Text("Rs. ${order?.price}",
                                 textScaleFactor: 1.2,
                                 overflow: TextOverflow.fade,
                                 textAlign: TextAlign.left,
@@ -100,7 +100,7 @@ class TicketOrders extends StatelessWidget {
                             Padding(
                               padding: const EdgeInsets.all(6.0),
                               child: Container(child:
-                              Text("${order.name}",textAlign: TextAlign.center,),alignment: Alignment.center,
+                              Text("${order?.name}",textAlign: TextAlign.center,),alignment: Alignment.center,
                               ),
                             ),
 
@@ -116,7 +116,7 @@ class TicketOrders extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(6.0),
-                              child: Container(child: Text("${order.houseName}, ${order.streetAddress}",
+                              child: Container(child: Text("${order?.houseName}, ${order?.streetAddress}",
                                 textAlign: TextAlign.center,),alignment: Alignment.center,),
                             ),
 
@@ -132,7 +132,7 @@ class TicketOrders extends StatelessWidget {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(6.0),
-                              child: Container(child: Text("${order.deliveryBoy}",textAlign: TextAlign.center,),alignment: Alignment.center,),
+                              child: Container(child: Text("${order?.deliveryBoy}",textAlign: TextAlign.center,),alignment: Alignment.center,),
                             ),
 
                           ]
