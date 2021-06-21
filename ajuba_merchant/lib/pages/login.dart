@@ -178,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
                       )
 
                           :Column(
-                        children: [
+                          children: [
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 0,horizontal: 50.0),
                             child: TextFormField(

@@ -129,8 +129,8 @@ class _FoodCatalogueState extends State<FoodCatalogue> {
     // if failed,use loadFailed(),if no data return,use LoadNodata()
 
     if(mounted)
-      setState(() async{
-        await getFoodListFromApi();
+      setState(() {
+
       });
     _refreshController.loadComplete();
   }

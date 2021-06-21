@@ -37,6 +37,8 @@ dependencies:
   http: ^0.12.2
   flutter_mobx: ^2.0.0
   pull_to_refresh: ^2.0.0
+  image_picker: ^0.6.7+22
+
 
 dev_dependencies:
   flutter_test:
