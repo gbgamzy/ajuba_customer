@@ -5,21 +5,21 @@
 /// latitude : 30.4779
 /// longitude : 74.5201
 
-class DeliveryBoy {
+class Rider {
   int? DbID;
-  String? name;
+  String? deliveryBoyName;
   String? registrationToken;
-  String? phone;
+  String? deliveryBoyPhone;
   double? latitude;
   double? longitude;
 
-  static DeliveryBoy? fromMap(Map<String, dynamic> map) {
+  static Rider? fromMap(Map<String, dynamic> map) {
     if (map == null) return null;
-    DeliveryBoy deliveryBoyBean = DeliveryBoy();
+    Rider deliveryBoyBean = Rider();
     deliveryBoyBean.DbID = map['DbID'];
-    deliveryBoyBean.name = map['name'];
+    deliveryBoyBean.deliveryBoyName = map['deliveryBoyName'];
     deliveryBoyBean.registrationToken = map['registrationToken'];
-    deliveryBoyBean.phone = map['phone'];
+    deliveryBoyBean.deliveryBoyPhone = map['deliveryBoyPhone'];
     deliveryBoyBean.latitude = map['latitude'];
     deliveryBoyBean.longitude = map['longitude'];
     return deliveryBoyBean;
@@ -27,9 +27,9 @@ class DeliveryBoy {
 
   Map toJson() => {
     "DbID": DbID,
-    "name": name,
+    "name": deliveryBoyName,
     "registrationToken": registrationToken,
-    "phone": phone,
+    "phone": deliveryBoyPhone,
     "latitude": latitude,
     "longitude": longitude,
   };

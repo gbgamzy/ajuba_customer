@@ -1,10 +1,15 @@
 import 'package:ajuba_merchant/dataClasses/food_menu.dart';
 import 'package:ajuba_merchant/pages/food_catalogue.dart';
+import 'package:ajuba_merchant/pages/rider.dart';
 import 'package:ajuba_merchant/utils/api.dart';
 import 'package:ajuba_merchant/utils/routes.dart';
+import 'package:ajuba_merchant/widgets/my_drawer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+
+import 'delivery_price.dart';
+import 'home_page.dart';
 
 class Menu extends StatefulWidget {
 
@@ -51,8 +56,20 @@ class _MenuState extends State<Menu> {
 
   @override
   Widget build(BuildContext context) {
+    final platform = Theme.of(context).platform;
+
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes:{
+
+        //Routes.menu : (context)=>Menu(),
+        Routes.rider : (context)=>RiderPage(),
+        Routes.delivery_price : (context)=>DeliveryPrice(),
+        Routes.home:(context)=>HomePage()
+
+
+      },
 
       
       home: Scaffold(
@@ -62,6 +79,7 @@ class _MenuState extends State<Menu> {
           title: Text("Menu"),
 
         ),
+        drawer: MyDrawer(),
         body: SmartRefresher(
           enablePullDown: true,
           enablePullUp: true,

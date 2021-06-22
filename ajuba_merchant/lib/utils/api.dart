@@ -3,8 +3,11 @@ import 'dart:convert';
 
 import 'dart:io';
 
+import 'package:ajuba_merchant/dataClasses/admin.dart';
+import 'package:ajuba_merchant/dataClasses/delivery_boy.dart';
 import 'package:ajuba_merchant/dataClasses/food_menu.dart';
 import 'package:ajuba_merchant/dataClasses/food_unit.dart';
+import 'package:ajuba_merchant/dataClasses/message.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:http/http.dart' as http;
 
@@ -130,6 +133,60 @@ abstract class Api{
 
 
 
+
+
+  }
+
+  static Future<List<Rider?>> getRiderList() async{
+    List<Rider?> list = new List.empty(growable: true);
+    final url = Uri.parse(base+"Ajuba/admin/getRidersList");
+    final response=await http.get(url);
+
+    List<dynamic> values = json.decode(response.body);
+    print(values);
+    if(values.length>0){
+      for(int i=0;i<values.length;i++){
+        if(values[i]!=null){
+
+          Map<String,dynamic> map=values[i];
+          list.add(Rider.fromMap(map));
+
+        }
+      }
+    }
+
+
+    return list;
+  }
+  static addRider(Rider rider) async{
+    final url = Uri.parse(base+"Ajuba/admin/getRidersList");
+    await http.post(url,body: rider.toJson());
+  }
+  static deleteRider(String phone) async{
+    final url = Uri.parse(base+"Ajuba/admin/getRidersList/$phone");
+    await http.delete(url);
+  }
+  static Future<Admin?> getPrices() async{
+    final url = Uri.parse(base+"Ajuba/admin/prices");
+    var response=await http.get(url);
+
+    Map<String,dynamic> map=jsonDecode(response.body);
+
+    Admin? admin=Admin.fromMap(map);
+    return admin;
+
+  }
+
+  static uploadPrices(Admin admin) async{
+    final url = Uri.parse(base+"Ajuba/admin/prices");
+    print("jsonAdmin");
+    print(jsonEncode(admin));
+
+
+    var response=await http.post(url,body:jsonEncode(admin),headers:{"Content-Type":"application/json"});
+    Map<String,dynamic> map=jsonDecode(response.body);
+
+    print(map);
 
 
   }

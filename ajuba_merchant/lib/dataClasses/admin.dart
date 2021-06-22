@@ -18,14 +18,14 @@ class Admin {
   String? phone;
   double? latitude;
   double? longitude;
-  int? dist1;
-  int? dist2;
-  int? dist3;
-  int? price1;
-  int? price2;
-  int? price3;
-  int? minimumDistance;
-  int? minimumPrice;
+  int? dist1=0;
+  int? dist2=0;
+  int? dist3=0;
+  int? price1=0;
+  int? price2=0;
+  int? price3=0;
+  int? minimumDistance=0;
+  int? minimumPrice=0;
 
   static Admin? fromMap(Map<String, dynamic>? map) {
     if (map == null) return null;
