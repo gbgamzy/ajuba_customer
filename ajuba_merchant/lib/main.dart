@@ -1,6 +1,7 @@
 
 import 'package:ajuba_merchant/pages/delivery_price.dart';
 import 'package:ajuba_merchant/pages/home_page.dart';
+import 'package:ajuba_merchant/pages/user_report.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -35,12 +36,13 @@ class MyApp extends StatelessWidget {
       ),
 
 
-      initialRoute: Routes.home,
+      initialRoute: Routes.userReport,
       routes: {
         '/': (context)=> HomePage(),
         //Routes.login: (context) => LoginPage(),
         Routes.home:(context) => HomePage(),
-        Routes.delivery_price:(context) => DeliveryPrice()
+        Routes.delivery_price:(context) => DeliveryPrice(),
+        Routes.userReport:(context) => UserReportPage()
 
       },
     );

@@ -8,4 +8,5 @@ class Routes {
   static String food_catalogue = '/menu/food_catalogue';
   static String rider = '/rider';
   static String delivery_price = '/delivery_price';
+  static String userReport = '/report';
 }

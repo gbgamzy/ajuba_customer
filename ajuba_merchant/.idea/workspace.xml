@@ -13,18 +13,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c28caed1-784e-4309-8151-6a3f1d0e9dd1" name="Default Changelist" comment=" food menu donae">
-      <change afterPath="$PROJECT_DIR$/lib/utils/screen_h_w.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils/toast.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/drop_down.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dataClasses/delivery_boy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dataClasses/delivery_boy.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/delivery_price.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/delivery_price.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/food_catalogue.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/food_catalogue.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/menu.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/rider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/rider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/my_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/my_drawer.dart" afterDir="false" />
+    <list default="true" id="c28caed1-784e-4309-8151-6a3f1d0e9dd1" name="Default Changelist" comment="only logiin left">
+      <change afterPath="$PROJECT_DIR$/lib/pages/user_report.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/debug_ios_bundle_flutter_assets.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/debug_ios_bundle_flutter_assets.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/flutter_assets.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/c0e50251d635a571b037bbed4c6d9fe9/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/f58ed05f7a6fba8f3451773989665e4b.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f58ed05f7a6fba8f3451773989665e4b.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/routes.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624366825021</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="only logiin left">
+      <created>1624441517687</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1624441517687</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,21 +176,26 @@
     <MESSAGE value="Phone Auth added" />
     <MESSAGE value="Upto food menu donae" />
     <MESSAGE value=" food menu donae" />
-    <option name="LAST_COMMIT_MESSAGE" value=" food menu donae" />
+    <MESSAGE value="only logiin left" />
+    <option name="LAST_COMMIT_MESSAGE" value="only logiin left" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624118884126">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
     <state x="240" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.843@0.0.1440.843" timestamp="1624118884126" />
-    <state x="636" y="159" key="#com.intellij.ide.util.MemberChooser" timestamp="1624306979699">
+    <state x="427" y="227" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624441467734">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
-    <state x="636" y="159" key="#com.intellij.ide.util.MemberChooser/0.0.1440.843@0.0.1440.843" timestamp="1624306979699" />
-    <state x="320" y="107" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1624384174845">
+    <state x="427" y="227" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.843@0.0.1440.843" timestamp="1624441467734" />
+    <state x="636" y="159" key="#com.intellij.ide.util.MemberChooser" timestamp="1624442909137">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
-    <state x="320" y="107" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.843@0.0.1440.843" timestamp="1624384174845" />
+    <state x="636" y="159" key="#com.intellij.ide.util.MemberChooser/0.0.1440.843@0.0.1440.843" timestamp="1624442909137" />
+    <state x="320" y="107" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1624442731325">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="320" y="107" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.843@0.0.1440.843" timestamp="1624442731325" />
     <state x="458" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1624305205092">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
@@ -178,22 +204,22 @@
       <screen x="0" y="0" width="1440" height="843" />
     </state>
     <state x="571" y="322" key="Github.ShareDialog/0.0.1440.843@0.0.1440.843" timestamp="1624042222151" />
-    <state width="1398" height="298" key="GridCell.Tab.0.bottom" timestamp="1624430811741">
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom" timestamp="1624442824637">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.0.1440.843@0.0.1440.843" timestamp="1624430811741" />
-    <state width="1398" height="298" key="GridCell.Tab.0.center" timestamp="1624430811741">
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.0.1440.843@0.0.1440.843" timestamp="1624442824637" />
+    <state width="1398" height="298" key="GridCell.Tab.0.center" timestamp="1624442824636">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.center/0.0.1440.843@0.0.1440.843" timestamp="1624430811741" />
-    <state width="1398" height="298" key="GridCell.Tab.0.left" timestamp="1624430811741">
+    <state width="1398" height="298" key="GridCell.Tab.0.center/0.0.1440.843@0.0.1440.843" timestamp="1624442824636" />
+    <state width="1398" height="298" key="GridCell.Tab.0.left" timestamp="1624442824636">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.left/0.0.1440.843@0.0.1440.843" timestamp="1624430811741" />
-    <state width="1398" height="298" key="GridCell.Tab.0.right" timestamp="1624430811741">
+    <state width="1398" height="298" key="GridCell.Tab.0.left/0.0.1440.843@0.0.1440.843" timestamp="1624442824636" />
+    <state width="1398" height="298" key="GridCell.Tab.0.right" timestamp="1624442824636">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
-    <state width="1398" height="298" key="GridCell.Tab.0.right/0.0.1440.843@0.0.1440.843" timestamp="1624430811741" />
+    <state width="1398" height="298" key="GridCell.Tab.0.right/0.0.1440.843@0.0.1440.843" timestamp="1624442824636" />
     <state x="473" y="128" key="RollbackChangesDialog" timestamp="1624295121100">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
@@ -202,10 +228,10 @@
       <screen x="0" y="0" width="1440" height="843" />
     </state>
     <state x="229" y="57" key="SettingsEditor/0.0.1440.843@0.0.1440.843" timestamp="1624222510735" />
-    <state x="320" y="145" key="Vcs.Push.Dialog.v2" timestamp="1624366827480">
+    <state x="320" y="145" key="Vcs.Push.Dialog.v2" timestamp="1624441565656">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
-    <state x="320" y="145" key="Vcs.Push.Dialog.v2/0.0.1440.843@0.0.1440.843" timestamp="1624366827480" />
+    <state x="320" y="145" key="Vcs.Push.Dialog.v2/0.0.1440.843@0.0.1440.843" timestamp="1624441565656" />
     <state x="385" y="189" key="run.anything.popup" timestamp="1624267954125">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
