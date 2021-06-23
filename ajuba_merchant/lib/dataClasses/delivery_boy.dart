@@ -27,9 +27,9 @@ class Rider {
 
   Map toJson() => {
     "DbID": DbID,
-    "name": deliveryBoyName,
+    "deliveryBoyName": deliveryBoyName,
     "registrationToken": registrationToken,
-    "phone": deliveryBoyPhone,
+    "deliveryBoyPhone": deliveryBoyPhone,
     "latitude": latitude,
     "longitude": longitude,
   };

@@ -1,6 +1,7 @@
 import 'package:ajuba_merchant/dataClasses/food_unit.dart';
 import 'package:ajuba_merchant/pages/add_food_unit.dart';
 import 'package:ajuba_merchant/utils/api.dart';
+import 'package:ajuba_merchant/utils/screen_h_w.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -29,6 +30,7 @@ class _FoodCatalogueState extends State<FoodCatalogue> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade50,
 
         appBar: AppBar(
           title: Text(category),
@@ -68,10 +70,71 @@ class _FoodCatalogueState extends State<FoodCatalogue> {
           onRefresh: _onRefresh,
           onLoading: _onLoading,
           child: ListView.builder(itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(foodList[index]!.name!),
-              leading: CircleAvatar(
-                backgroundImage: NetworkImage(Api.base+"Ajuba/images/${foodList[index]!.image}"),
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0,vertical: 4),
+              child: ListTile(
+                tileColor: Colors.white,
+                contentPadding: EdgeInsets.all(12),
+                title: Text(foodList[index]!.name!),
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(Api.base+"Ajuba/images/${foodList[index]!.image}"),
+                  maxRadius: 40,
+                ),
+                trailing: InkWell(
+                  onTap: () async{
+                    showDialog(context: context, builder: (context1){
+                      return AlertDialog(
+                        title: Text("Confirm delete?"),
+                        content: Container(
+
+                          child: Row(
+                              children:[
+                                SizedBox(
+                                  width: Dimension.getWidth(context)/2.5,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                  child: InkWell(
+                                    onTap: () async{
+                                      await Api.deleteFood(category, foodList[index]!);
+
+                                      Navigator.of(context1).pop();
+                                      getFoodListFromApi();
+                                    },
+                                    child: Text("Yes",
+                                      style: TextStyle(
+                                          color: Colors.blueAccent
+                                      ),
+
+
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                                  child: InkWell(
+                                    onTap: (){
+                                      Navigator.of(context1).pop();
+                                    },
+                                    child: Text("No",
+                                      style: TextStyle(
+                                          color: Colors.blueAccent
+                                      ),),
+                                  ),
+                                )
+                              ]
+                          ),
+                        ),
+                      );
+                    });
+
+                  },
+                  child: Icon(CupertinoIcons.delete_simple,
+                    color: Colors.red.shade300,
+
+                  ),
+                ),
+
               ),
             );
           },
@@ -103,6 +166,9 @@ class _FoodCatalogueState extends State<FoodCatalogue> {
     });
     foodList.forEach((element) async{
       var image = await Api.getImage(element!.image);
+
+    });
+    setState(() {
 
     });
 

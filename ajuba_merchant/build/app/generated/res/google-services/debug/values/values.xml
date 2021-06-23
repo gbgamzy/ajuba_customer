@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">578817083399-6pgvm618mmv5q6fcinn6ppv6s9k9n6vq.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">578817083399</string>
+    <string name="google_api_key" translatable="false">AIzaSyDjfkrsWSnPbEBupna1ZfrV6jUimr_J_H0</string>
+    <string name="google_app_id" translatable="false">1:578817083399:android:630420d4eb247e7dae02a2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDjfkrsWSnPbEBupna1ZfrV6jUimr_J_H0</string>
+    <string name="google_storage_bucket" translatable="false">ajuba-flutter.appspot.com</string>
+    <string name="project_id" translatable="false">ajuba-flutter</string>
+</resources>

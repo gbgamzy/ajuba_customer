@@ -5,10 +5,12 @@ import 'package:ajuba_merchant/pages/menu.dart';
 import 'package:ajuba_merchant/pages/rider.dart';
 import 'package:ajuba_merchant/utils/api.dart';
 import 'package:ajuba_merchant/utils/routes.dart';
+import 'package:ajuba_merchant/utils/toast.dart';
 import 'package:ajuba_merchant/widgets/my_drawer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 Admin admin=Admin();
 class DeliveryPrice extends StatefulWidget {
 
@@ -229,9 +231,7 @@ class _DeliveryPriceState extends State<DeliveryPrice> {
                   ),
                   ElevatedButton(onPressed: () async{
                     await Api.uploadPrices(admin);
-                    //getPricesFromApi();
-                    print("hurrrrrr");
-                    print(admin.minimumPrice);
+                    ShowToast.showToast(context,"Done",Colors.greenAccent,CupertinoIcons.checkmark_alt);
                   }, child: Text("Upload"))
 
                 ]

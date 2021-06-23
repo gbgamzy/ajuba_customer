@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c28caed1-784e-4309-8151-6a3f1d0e9dd1" name="Default Changelist" comment=" food menu donae">
+      <change afterPath="$PROJECT_DIR$/lib/utils/screen_h_w.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/toast.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/drop_down.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dataClasses/delivery_boy.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dataClasses/delivery_boy.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/delivery_price.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/delivery_price.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/food_catalogue.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/food_catalogue.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/menu.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/rider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/rider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/api.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/my_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/my_drawer.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1u8HhZ7H1Kf5QFY7xMNtabVsRxo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/pages" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/android/app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c28caed1-784e-4309-8151-6a3f1d0e9dd1" name="Default Changelist" comment="" />
+      <created>1624040421644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624040421644</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Gautam mark01">
+      <created>1624042354105</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624042354105</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Gautam mark01">
+      <created>1624043759706</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624043759711</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Gautam mark02">
+      <created>1624043945759</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624043945759</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Phone Auth added">
+      <created>1624124700822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624124700823</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Upto food menu donae">
+      <created>1624268170193</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624268170193</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" food menu donae">
+      <created>1624277627288</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624277627288</updated>
+    </task>
+    <task id="LOCAL-00007" summary=" food menu donae">
+      <created>1624366825021</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1624366825021</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Gautam mark01" />
+    <MESSAGE value="Gautam mark02" />
+    <MESSAGE value="Phone Auth added" />
+    <MESSAGE value="Upto food menu donae" />
+    <MESSAGE value=" food menu donae" />
+    <option name="LAST_COMMIT_MESSAGE" value=" food menu donae" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624118884126">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="240" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.843@0.0.1440.843" timestamp="1624118884126" />
+    <state x="636" y="159" key="#com.intellij.ide.util.MemberChooser" timestamp="1624306979699">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="636" y="159" key="#com.intellij.ide.util.MemberChooser/0.0.1440.843@0.0.1440.843" timestamp="1624306979699" />
+    <state x="320" y="107" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1624384174845">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="320" y="107" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1440.843@0.0.1440.843" timestamp="1624384174845" />
+    <state x="458" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1624305205092">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="458" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.843@0.0.1440.843" timestamp="1624305205092" />
+    <state x="571" y="322" key="Github.ShareDialog" timestamp="1624042222151">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="571" y="322" key="Github.ShareDialog/0.0.1440.843@0.0.1440.843" timestamp="1624042222151" />
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom" timestamp="1624430811741">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.bottom/0.0.1440.843@0.0.1440.843" timestamp="1624430811741" />
+    <state width="1398" height="298" key="GridCell.Tab.0.center" timestamp="1624430811741">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.center/0.0.1440.843@0.0.1440.843" timestamp="1624430811741" />
+    <state width="1398" height="298" key="GridCell.Tab.0.left" timestamp="1624430811741">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.left/0.0.1440.843@0.0.1440.843" timestamp="1624430811741" />
+    <state width="1398" height="298" key="GridCell.Tab.0.right" timestamp="1624430811741">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state width="1398" height="298" key="GridCell.Tab.0.right/0.0.1440.843@0.0.1440.843" timestamp="1624430811741" />
+    <state x="473" y="128" key="RollbackChangesDialog" timestamp="1624295121100">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="473" y="128" key="RollbackChangesDialog/0.0.1440.843@0.0.1440.843" timestamp="1624295121100" />
+    <state x="229" y="57" key="SettingsEditor" timestamp="1624222510735">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="229" y="57" key="SettingsEditor/0.0.1440.843@0.0.1440.843" timestamp="1624222510735" />
+    <state x="320" y="145" key="Vcs.Push.Dialog.v2" timestamp="1624366827480">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="320" y="145" key="Vcs.Push.Dialog.v2/0.0.1440.843@0.0.1440.843" timestamp="1624366827480" />
+    <state x="385" y="189" key="run.anything.popup" timestamp="1624267954125">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="385" y="189" key="run.anything.popup/0.0.1440.843@0.0.1440.843" timestamp="1624267954125" />
+    <state x="385" y="167" width="670" height="676" key="search.everywhere.popup" timestamp="1624279494590">
+      <screen x="0" y="0" width="1440" height="843" />
+    </state>
+    <state x="385" y="167" width="670" height="676" key="search.everywhere.popup/0.0.1440.843@0.0.1440.843" timestamp="1624279494590" />
+  </component>
+</project>

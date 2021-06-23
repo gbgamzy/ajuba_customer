@@ -160,11 +160,14 @@ abstract class Api{
   }
   static addRider(Rider rider) async{
     final url = Uri.parse(base+"Ajuba/admin/getRidersList");
-    await http.post(url,body: rider.toJson());
+    print(jsonEncode(rider));
+    await http.post(url,body:jsonEncode(rider),headers:{"Content-Type":"application/json"});
   }
   static deleteRider(String phone) async{
     final url = Uri.parse(base+"Ajuba/admin/getRidersList/$phone");
-    await http.delete(url);
+    var response=await http.delete(url);
+    var x=jsonDecode(response.body);
+    print(x);
   }
   static Future<Admin?> getPrices() async{
     final url = Uri.parse(base+"Ajuba/admin/prices");
