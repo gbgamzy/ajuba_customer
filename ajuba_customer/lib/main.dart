@@ -1,6 +1,12 @@
+import 'package:ajuba_customer/pages/home_page.dart';
+import 'package:ajuba_customer/pages/login_page.dart';
+import 'package:ajuba_customer/utils/routes.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -10,6 +16,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      initialRoute: Routes.home,
+      routes: {
+        //'/': (context)=>LoginPage(),
+        //Routes.login:(context)=>LoginPage(),
+        Routes.home:(context)=>HomePage()
+
+      },
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -22,7 +35,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+
     );
   }
 }
