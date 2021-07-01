@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:pinput/pin_put/pin_put.dart';
 import 'package:pinput/pin_put/pin_put_state.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
 
@@ -14,6 +15,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  late SharedPreferences prefs ;
 
 
   String name="",otp="",phone="",verification="";
@@ -37,6 +39,9 @@ class _LoginPageState extends State<LoginPage> {
 
   moveToHome() async{
 
+    prefs.setString("phone", phone);
+    prefs.setString("name", name);
+    prefs.setBool("logged", true);
     setState(() {
       changeButton = true;
     });
@@ -46,65 +51,81 @@ class _LoginPageState extends State<LoginPage> {
 
     Navigator.popAndPushNamed(context, Routes.home);
 
-    setState(() {
-      changeButton = false;
-    });
+
 
 
   }
+
+  Future<void> initiatePref() async{
+     prefs = await SharedPreferences.getInstance();
+  }
   verify() async {
-    if(_formKey.currentState!.validate()) {
-      setState(() {
-        logging = !logging;
-      });
+    if(verification.isNotEmpty) {
+
       try{
-        auth.signInWithCredential(PhoneAuthProvider.credential(
-            verificationId: verification, smsCode: otp));
+        await auth.signInWithCredential(PhoneAuthProvider.credential(
+            verificationId: verification, smsCode: otp)).then((value) async{
+              if(value.user!=null){
+                print(value.user);
+                moveToHome();
+              }
+        });
+
+
       }
       catch(e){
         print(e);
 
       }
-      print(" done");
-      moveToHome();
+
     }
 
   }
   sendOtp() async{
-    print("sendOtp clicked");
-    await FirebaseAuth.instance.verifyPhoneNumber(phoneNumber: "+91"+phone,
-        verificationCompleted: (phoneAuthCredential) async{
-          await auth.signInWithCredential(phoneAuthCredential).then((value) async{
-            if(value.user!=null){
-              print("SUCCESS");
-              moveToHome();
+
+    if(_formKey.currentState!.validate()) {
+      if(!logging){
+        logging=true;
+      }
+      print("sendOtp clicked");
+      print(phone);
+      await FirebaseAuth.instance.verifyPhoneNumber(
+          phoneNumber: "+91" + phone,
+          verificationCompleted: (phoneAuthCredential) async {
+            await auth
+                .signInWithCredential(phoneAuthCredential)
+                .then((value) async {
+              if (value.user != null) {
+                print("SUCCESS");
+                moveToHome();
+              }
+            });
+          },
+          verificationFailed: (FirebaseAuthException error) {
+            if (error.code == 'invalid-phone-number') {
+              print("error on verificationFailed");
+              print(error);
             }
-          });
+          },
+          codeSent: (verificationId, forceResendingToken) async {
+            setState(() {
+              verification = verificationId;
+              print("Verification set");
+              print(verificationId);
+            });
+          },
+          codeAutoRetrievalTimeout: (verificationId) {
+            setState(() {
+              verification = verificationId;
+              print("Verification set");
+              print(verificationId);
+            });
+          },
+          timeout: Duration(seconds: 60));
 
-        },
-        verificationFailed: (FirebaseAuthException error) {
-          if (error.code == 'invalid-phone-number') {
-            print("error on verificationFailed");
-            print(error);
-          }
-        },
-        codeSent: (verificationId, forceResendingToken) async{
-          setState(() {
-            verification=verificationId;
+      moveToHome();
+    }
 
-          });
-
-        },
-        codeAutoRetrievalTimeout: (verificationId) {
-          setState(() {
-            verification=verificationId;
-
-
-          });
-
-
-        },
-        timeout: Duration(seconds:60));
 
 
   }
@@ -112,7 +133,15 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    initiatePref().whenComplete(() {
+      if(prefs.getBool("logged")!=null)
+        if(prefs.getBool("logged")!){
+          moveToHome();
+        }
+    });
     double height=MediaQuery.of(context).size.height;
+
+
 
     return Material(
       child:SingleChildScrollView(
@@ -148,12 +177,7 @@ class _LoginPageState extends State<LoginPage> {
                           fieldsCount: 6,
                           keyboardType: TextInputType.number,
                           textInputAction: TextInputAction.done,
-                          validator: (value){
-                            if(value!.length!=6){
-                              return "Invalid otp";
-                            }
-                            return null;
-                          },
+
 
                           focusNode: _pinPutFocusNode,
                           controller: _pinPutController,
@@ -237,9 +261,7 @@ class _LoginPageState extends State<LoginPage> {
                         print("logging: $logging");
                         logging?verify():sendOtp();
                         setState(() {
-                          if(!logging){
-                            logging=true;
-                          }
+
                         });
                       }
                       ,
@@ -283,6 +305,15 @@ class _LoginPageState extends State<LoginPage> {
       ),
 
     );
+
+
+  }
+  @override
+  void initState() {
+    super.initState();
+    initiatePref().whenComplete(() =>setState((){
+
+    }) );
 
 
   }

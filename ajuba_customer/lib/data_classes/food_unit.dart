@@ -5,12 +5,13 @@
 /// category : "Breakfast"
 /// available : 0
 class FoodUnit {
-  int? FUID;
-  String? name;
-  int? price;
-  String? image;
-  String? category;
-  int? available;
+  int FUID=0;
+  String name="";
+  int price=0;
+  int quantity=0;
+  String image="";
+  String category="";
+  int available=1;
 
   static FoodUnit? fromMap(Map<String, dynamic> map) {
 

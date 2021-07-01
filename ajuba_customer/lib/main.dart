@@ -1,11 +1,26 @@
+import 'package:ajuba_customer/pages/add_address.dart';
 import 'package:ajuba_customer/pages/home_page.dart';
+import 'package:ajuba_customer/pages/locate_order.dart';
 import 'package:ajuba_customer/pages/login_page.dart';
+import 'package:ajuba_customer/pages/orders_page.dart';
 import 'package:ajuba_customer/utils/routes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+
+import 'package:path_provider/path_provider.dart';
+
+import 'data_classes/address.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  final applicationDocumentDir = await getApplicationDocumentsDirectory();
+  await Hive.initFlutter(applicationDocumentDir.path);
+  if(!Hive.isAdapterRegistered(0))
+    Hive.registerAdapter(AddressAdapter());
+
+  await Hive.openBox("address");
+
   await Firebase.initializeApp();
   runApp(MyApp());
 }
@@ -18,9 +33,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       initialRoute: Routes.home,
       routes: {
-        //'/': (context)=>LoginPage(),
-        //Routes.login:(context)=>LoginPage(),
-        Routes.home:(context)=>HomePage()
+
+
+        Routes.home:(context)=>HomePage(),
+        Routes.login:(context)=>LoginPage(),
+        Routes.orders:(context)=>OrdersPage(),
+        Routes.locateOrder:(context)=>LocateOrderPage(),
+        Routes.addAddress:(context)=>AddAddressPage(),
 
       },
       theme: ThemeData(

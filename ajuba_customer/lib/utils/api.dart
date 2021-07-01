@@ -14,6 +14,7 @@ import 'package:http/http.dart' as http;
 
 abstract class Api{
   static String base = "http://ajubabhaturewala.co.in/";
+  static String image = "http://ajubabhaturewala.co.in/Ajuba/images/";
 
 
   static Future<List<FoodMenu?>> getMenu() async{
@@ -104,13 +105,13 @@ abstract class Api{
     return list;
   }
 
-  static Future<Rider?> getRider(String phone) async{
+  static Future<Rider> getRider(String phone) async{
     final url = Uri.parse(base+"Ajuba/customer/rider/$phone");
     var response=await http.get(url);
 
     Map<String,dynamic> map=jsonDecode(response.body);
 
-    Rider? rider=Rider.fromMap(map);
+    Rider rider=Rider.fromMap(map);
     return rider;
   }
   static Future<Message?> login(String phone,String registrationToken,String name) async{

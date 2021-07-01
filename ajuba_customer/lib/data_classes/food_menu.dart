@@ -5,7 +5,7 @@ import 'food_unit.dart';
 class FoodMenu {
   int? FMID;
   String? category;
-  List<FoodUnit?> list=List.empty(growable: true);
+  List<FoodUnit?>? list=List.empty(growable: true);
 
 
   static FoodMenu? fromMap(Map<String, dynamic> map) {

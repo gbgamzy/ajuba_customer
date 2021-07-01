@@ -9,11 +9,11 @@ class Rider {
   String? deliveryBoyName;
   String? registrationToken;
   String? deliveryBoyPhone;
-  double? latitude;
-  double? longitude;
+  double latitude=0;
+  double longitude=0;
 
-  static Rider? fromMap(Map<String, dynamic> map) {
-    if (map == null) return null;
+  static Rider fromMap(Map<String, dynamic> map) {
+
     Rider deliveryBoyBean = Rider();
     deliveryBoyBean.DbID = map['DbID'];
     deliveryBoyBean.deliveryBoyName = map['deliveryBoyName'];
