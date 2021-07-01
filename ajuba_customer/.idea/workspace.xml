@@ -96,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625141371197</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="working">
+      <created>1625141634861</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625141634862</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,10 +182,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="469" y="156" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1624539986000" />
-    <state x="320" y="163" key="Vcs.Push.Dialog.v2" timestamp="1625141378671">
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2" timestamp="1625141638991">
       <screen x="0" y="0" width="1440" height="843" />
     </state>
-    <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.843@0.0.1440.843" timestamp="1625141378671" />
+    <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.843@0.0.1440.843" timestamp="1625141638991" />
     <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1624526787813" />
     <state x="385" y="189" width="670" height="675" key="run.anything.popup" timestamp="1624697560952">
       <screen x="0" y="0" width="1440" height="843" />
